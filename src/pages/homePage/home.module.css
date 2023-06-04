@@ -1,0 +1,18 @@
+.list_movie{
+    /* margin-top: 107px; */
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+}
+.list_item:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.list_item{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
