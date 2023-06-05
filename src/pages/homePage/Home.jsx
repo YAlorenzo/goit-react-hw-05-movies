@@ -21,13 +21,15 @@ function Home() {
                 return (
                     <Link to={`/movies/${id}`}  key={id}>
                     <li id={id} className={css.list_item}>
-                    <img src={link} alt="movie_poster" width='300' height='360'/>
+                            <img src={link} alt="movie_poster" width='300' height='360' />
                     </li>
                      </Link>
                  
                 )})
-}
-    </ul>  
+} 
+        </ul>  
+        
+        
     )
         
     
