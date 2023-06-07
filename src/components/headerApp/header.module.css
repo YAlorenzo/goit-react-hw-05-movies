@@ -16,7 +16,7 @@
 .logo{
     font-size: 34px;
     font-weight: 700;
-    color: whitesmoke;
+    color: #C3073F;
 }
 .list{
     display: flex;
@@ -27,7 +27,7 @@
 }
 .link_header{
     font-weight: 400;
-    color: whitesmoke;
+    color: #C3073F;
     text-decoration: none;
     margin-right: 20px;
 }

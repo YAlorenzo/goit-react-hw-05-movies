@@ -20,7 +20,12 @@ function Home() {
                 
                 return (
                     <Link to={`/movies/${id}`}  key={id}>
-                    <li id={id} className={css.list_item}>
+                        <li id={id} className={css.list_item}>
+                             {/* {unreadMessages.length > 0 ? (
+        <p>You have {unreadMessages.length} unread messages.</p>
+      ) : (
+        <p>No unread messages.</p>
+      )} */}
                             <img src={link} alt="movie_poster" width='300' height='360' />
                     </li>
                      </Link>

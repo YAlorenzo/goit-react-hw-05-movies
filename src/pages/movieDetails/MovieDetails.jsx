@@ -1,5 +1,6 @@
-import { NavLink, Outlet, useParams } from "react-router-dom";
+import { NavLink, Outlet, useParams, Link} from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import { Suspense } from "react";
 import css from "./movieStyles.module.css"
 
@@ -39,8 +40,11 @@ function MovieDetails() {
             </div>
            
             
-            
+             
             <div className={css.container}>
+                <Link to={'/'}>
+                <button type="button" className={css.button_home}>Go Back</button>
+                </Link> 
                 <p className={css.movie_title}>{movie.title}</p>
 
                 
@@ -75,8 +79,11 @@ function MovieDetails() {
                     </p>
                         
                 </div>
-                <NavLink to="Cast" className={css.cast_rev}>Cast</NavLink>
-                <NavLink to="Reviews" className={css.cast_rev}>Reviews</NavLink>
+                <nav className={css.nuv_cast_rev}>
+                <NavLink to="Cast" className={css.cast_rev}>Click to watch Cast</NavLink>
+                <NavLink to="Reviews" className={css.cast_rev}>Click to watch Reviews</NavLink>
+                </nav>
+                
 
                   <Suspense fallback={<div>Loading subpage...</div>}>
                       <Outlet />

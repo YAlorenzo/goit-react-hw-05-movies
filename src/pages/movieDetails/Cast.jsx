@@ -19,7 +19,14 @@ function Cast() {
                 {cast.map(({ cast_id, original_name, profile_path }) => {
                     return (
                         <li key={cast_id} className={css.cast_list__item}>
-                            <img src={`https://image.tmdb.org/t/p/original${profile_path}`} className={css.photo} alt="phot" width="120" height="120"/>
+                            {profile_path === null ? (
+                                <div className={css.box_null}>Opps, no photo</div>
+                            )
+                                : (
+                              <img src={`https://image.tmdb.org/t/p/original${profile_path}`} className={css.photo} alt="phot" width="100" height="150"/>
+                            )    
+                        }
+                            
                         <p>{original_name}</p>
                     </li>
                     )
