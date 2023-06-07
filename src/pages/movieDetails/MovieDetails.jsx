@@ -36,7 +36,12 @@ function MovieDetails() {
     return (
         <div>
             <div className={css.containerPoster}>
-                 <img src={link} alt="poster" width='100%' height="500" />
+                {movie.backdrop_path === null ? (
+                    <div className={css.poster_box}>Opps, no poster</div>
+      ) : (
+       <img src={link} alt="poster" width='100%' height="500" />
+      )}
+                 
             </div>
            
             
