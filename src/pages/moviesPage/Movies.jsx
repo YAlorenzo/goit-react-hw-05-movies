@@ -41,9 +41,7 @@ function Movies() {
     }
     
     return (
-         
         <div className={css.container}>
-            
             <form className={css.form} onSubmit={searchMovie}>  
                <Link to={'/'}>
                 <button type="button" className={css.button_home}>Go Back</button>
