@@ -19,7 +19,7 @@ function Movies() {
                 console.log(error)
             })
         }
-    },[])
+    },[movieName])
      
     const searchMovie = (evnt) => {
          console.log('отправил')
